@@ -145,7 +145,9 @@ An image of the circuit is the following:
 We then mapped the values from the potentiometer to control the servo. The Parallax continuous rotation servo takes in values from a PWM signal ranging from 0-180.  At a value of 90, the servo is not moving; increasing toward 180 the servo speeds up in one direction, and decreasing to 0 the servo speeds up in the other direction.
 
 ![potentiometer to servo motor](/images/lab1/pot_motor.gif)
+
 The circuit setup is shown in the following image:
+
 [pot_servo](/images/lab1/pot_servo.jpg)
 ~~~
 #include <Servo.h> //include the servo library
@@ -169,7 +171,9 @@ void loop() {
   delay(15);                       // wait 
 }
 ~~~
+
 The video is a demonostration of using the rotation of potentiometer to control the servo:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AC5Cre2YxCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
 
@@ -226,8 +230,11 @@ void turn() {
 }
 ~~~
 The final robot functioned as we expected, and was able to run in a square. A video of our robot working autonomously is shown below:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx0h-h_tRTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 The final robot image is the following:
+
 ![final](/images/lab1/robot.jpg)
 
 ## Work Distribution
