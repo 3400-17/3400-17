@@ -233,9 +233,6 @@ The final robot functioned as we expected, and was able to run in a square. A vi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx0h-h_tRTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The final robot image is the following:
-
-![final](/images/lab1/robot.jpg)
 
 ## Work Distribution
 
