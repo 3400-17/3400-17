@@ -42,7 +42,7 @@ An image of the internal LED setup is the following:
 
 ![internal LED](https://drive.google.com/file/d/18AL-JPXZcwoq-ZhWS-gMLJUDr7UwhRXo/view?usp=sharing)
 
-<img src=https://drive.google.com/file/d/18AL-JPXZcwoq-ZhWS-gMLJUDr7UwhRXo/view?usp=sharing height=400>
+<img src="https://drive.google.com/file/d/18AL-JPXZcwoq-ZhWS-gMLJUDr7UwhRXo/view?usp=sharing" height=400>
 
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
