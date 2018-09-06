@@ -117,9 +117,8 @@ We then used the potentiometer to control the brightness the LED. As we rotated 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4isUPZo6t5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The code for controlling LED intensity is the following:
-
 ![potentiometer to LED intensity](/images/lab1/pot_led.gif)
+The code for controlling LED intensity is the following:
 
 ~~~
 int sensorPin = A0;
@@ -139,7 +138,7 @@ void loop() {
 }
 ~~~
 An image of the circuit is the following:
-![pot_LED](/images/lab1/pot_led.jpg)
+![pot_LED](/images/lab1/pot_LED.jpg)
 
 
 ## Potentiometer to Servo
