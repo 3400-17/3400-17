@@ -1,13 +1,23 @@
 # Lab 1: Introduction to Arduino and Robot Assembly
 
-## Goal
+### Objectives
 
-The goal of this Lab was to learn how to use the Arduino Uno and the Arduino IDE.  We did so through implementing the following procedures, that all came together to allow us to have our robot complete a simple, autonomous task.
+* Learn how to use the Arduino Uno and the Arduino IDE.
+* Construct a simple Arduino program with multiple components and the Arduino Uno
+* Assemble robot and complete a simple, autonomous task.
+
+
+### Teams
+**Team 1**: Zoe, Michael
+
+**Team 2**: Natan, Marcela, Siming
+
 
 ## Internal Blink
 
-[Watch the video!](https://drive.google.com/file/d/1AitKiP5LDuS085Qc87MSYno-bPexnUOw/view?usp=sharing)
+Using the "Blink" code in File>Examples>1.Basics> Blink of Arduino IDE, we could make the internal LED blink. 
 
+<iframe src="https://drive.google.com/file/d/1AitKiP5LDuS085Qc87MSYno-bPexnUOw/preview" width="640" height="480"></iframe>
 
 
 ~~~
@@ -27,6 +37,7 @@ void loop() {
 
 ## External Blink
 
+The external LED was connected in series with a 1k ohm resistor from pin8 to ground on the Arduino as seen below. 
 ![external led](/images/lab1/external_led_blink.gif)
 
 ~~~
@@ -45,8 +56,9 @@ void loop() {
 ~~~
 
 ## Potentiometer Serial Read
-
+We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
+We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
 ~~~
 int sensorPin = A0;
