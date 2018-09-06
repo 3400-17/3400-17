@@ -4,7 +4,7 @@
 
 * Learn how to use the Arduino Uno and the Arduino IDE.
 * Construct a simple Arduino program with multiple components and the Arduino Uno
-* Assemble robot and complete a simple, autonomous task. 123
+* Assemble robot and complete a simple, autonomous task. 345
 
 
 ### Teams
@@ -42,7 +42,7 @@ An image of the internal LED setup is the following:
 
 ![internal LED](https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg)
 
-<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg height="400">
+<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg >
 
 ## External Blink
 
@@ -50,7 +50,8 @@ The external LED was connected in series with a 1k ohm resistor from pin8 to gro
 
 ![external led](https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing)
 
-<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_ext_led.jpg height="400">
+<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_ext_led.jpg >
+
 ~~~
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
