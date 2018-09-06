@@ -39,11 +39,13 @@ void loop() {
 }
 ~~~
 An image of the internal LED setup is the following: 
+
 ![internal LED](/images/lab1/compressed_int_led.jpg)
 
 ## External Blink
 
 The external LED was connected in series with a 1k ohm resistor from pin8 to ground on the Arduino as seen below. 
+
 ![external led](/images/lab1/external_led_blink.gif)
 
 ~~~
@@ -61,22 +63,27 @@ void loop() {
 }
 ~~~
 The vidoe of the external LED blinking is shown the video below:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UREEzOB6Taw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 An image of the external LED blinking is shown in the image below:
+
 ![external LED](/images/lab1/compressed_ext_led.jpg)
 
 
 ## Potentiometer Serial Read
 
 The potentiometer was used to divide voltage, and therefore control the associated electronics in the circuit. The potentiometer works as the following:
+
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
 
 We connected the potentiometer to the Arduino like so:
+
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
 
 The circuit setup is like the following:
+
 ![potentiometer](/images/lab1/compressed_pot_print.jpg)
 
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
@@ -105,6 +112,7 @@ Running the code printed out the analog value to the serial monitor. It worked a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 An image of screen printout and the circuit is the following:
+
 ![pot_print](/images/lab1/Webp.net-resizeimage-8.jpg)
 
 
@@ -139,6 +147,7 @@ void loop() {
 }
 ~~~
 An image of the circuit is the following:
+
 ![pot_LED](/images/lab1/Webp.net-resizeimage-10.jpg)
 
 
