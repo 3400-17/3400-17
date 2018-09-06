@@ -4,7 +4,7 @@
 
 * Learn how to use the Arduino Uno and the Arduino IDE.
 * Construct a simple Arduino program with multiple components and the Arduino Uno
-* Assemble robot and complete a simple, autonomous task.
+* Assemble robot and complete a simple, autonomous task. 123
 
 
 ### Teams
