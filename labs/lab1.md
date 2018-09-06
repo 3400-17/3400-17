@@ -73,7 +73,7 @@ The potentiometer was used to divide voltage, and therefore control the associat
 
 The circuit setup is like the following:
 
-![potentiometer](/images/lab1/compressed_pot_print.jpg)
+![potentiometer](https://snag.gy/1jWVIz.jpg)
 
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins (AO), and set the sensor value to be 0. 
 We also had to initialize the serial port with a Serial.begin() call.
