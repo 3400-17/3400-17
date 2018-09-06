@@ -41,12 +41,15 @@ void loop() {
 An image of the internal LED setup is the following: 
 
 ![internal LED](https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg)
+
 <img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg height="400">
+
 ## External Blink
 
 The external LED was connected in series with a 1k ohm resistor from pin8 to ground on the Arduino as seen below. 
 
 ![external led](https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing)
+
 <img src=https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing height="400">
 ~~~
 void setup() {
