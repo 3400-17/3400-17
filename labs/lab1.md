@@ -39,7 +39,7 @@ void loop() {
 }
 ~~~
 An image of the internal LED setup is the following: 
-![internal LED](/images/lab1/int_LED.jpg)
+![internal LED](/images/lab1/compressed_int_led.jpg)
 
 ## External Blink
 
@@ -64,7 +64,7 @@ The vidoe of the external LED blinking is shown the video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UREEzOB6Taw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 An image of the external LED blinking is shown in the image below:
-![external LED](/images/lab1/ext_LED.jpg)
+![external LED](/images/lab1/compressed_ext_led.jpg)
 
 
 ## Potentiometer Serial Read
@@ -77,7 +77,7 @@ We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
 
 The circuit setup is like the following:
-![potentiometer](/images/lab1/pot_print.jpg)
+![potentiometer](/images/lab1/compressed_pot_print.jpg)
 
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
@@ -105,10 +105,9 @@ Running the code printed out the analog value to the serial monitor. It worked a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 An image of screen printout and the circuit is the following:
-![pot_print](/images/lab1/pot_print_screen.jpg)
+![pot_print](/images/lab1/Webp.net-resizeimage-8.jpg)
 
-The next phase was controlling an LED with the potentiometer reading. We built the following circuit:
-![potentiometer to LED port](/images/lab1/pot_LED.jpg)
+
 
 
 
@@ -119,7 +118,7 @@ We then used the potentiometer to control the brightness the LED. As we rotated 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4isUPZo6t5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-![potentiometer to LED intensity](/images/lab1/pot_led.gif)
+![potentiometer to LED intensity](/images/lab1/compressed_pot_led.gif)
 
 The code for controlling LED intensity is the following:
 ~~~
@@ -140,7 +139,7 @@ void loop() {
 }
 ~~~
 An image of the circuit is the following:
-![pot_LED](/images/lab1/pot_LED.jpg)
+![pot_LED](/images/lab1/Webp.net-resizeimage-10.jpg)
 
 
 ## Potentiometer to Servo
@@ -150,7 +149,7 @@ We then mapped the values from the potentiometer to control the servo. The Paral
 
 The circuit setup is shown in the following image:
 
-![pot_servo](/images/lab1/pot_servo.jpg)
+![pot_servo](/images/lab1/compressed_pot_servo.jpg)
 ~~~
 #include <Servo.h> //include the servo library
 Servo myservo; 
@@ -184,7 +183,7 @@ The video is a demonostration of using the rotation of potentiometer to control 
 
 We took cues from the lab instruction and past team websites, and we assembled our own website. The final robot is shown below. 
 
-![assembled robot](/images/lab1/robot.jpg)
+![assembled robot](/images/lab1/compressed_robot.jpg)
 
 
 The next thing we had to think about was how we would power the necessary peripherals. To power two servos from our 5V battery pack, we spliced a USB cable such that we were able to get the individual power and ground wires. Since there is only a single 5V port on the Arduino, this served us well as a temporary hack so both servos could access 5V through connection on a breadboard. The Arduino was powered through a 9V battery, that we placed beneath the Arduino mount on the robot. With everything assembled, our robot was ready to be programmed.
