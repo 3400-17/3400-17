@@ -64,7 +64,7 @@ We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
-```cpp
+~~~
 int sensorPin = A0;
 int sensorValue=0;
 
@@ -72,9 +72,9 @@ void setup() {
 
   Serial.begin(9600);
 }
-```
+~~~
 We print the sensor value on the screen using a `Serial.print` call. We waited for half a second using `delay`:
-```cpp
+~~~
 // the loop function runs over and over again forever
 void loop() {
   sensorValue = analogRead(sensorPin);
@@ -83,7 +83,7 @@ void loop() {
   delay(1000);                       // wait for a second
 
 }
-```
+~~~
 Running the code printed out the analog value to the serial monitor. It worked as expected. Here is a video of the setup. 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
