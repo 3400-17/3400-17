@@ -40,17 +40,12 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ~~~
-An image of the internal LED setup is the following: 
 
-![internal LED](/images/lab1/compressed_int_led.jpg)
+This example helped us understand how an Arduino program worked.  The setup() portion of the code is run once at the initialization of the program and then the loop() portion of the code is run continuously. 
 
 ## External Blink
 
-The external LED was connected in series with a 1k ohm resistor from pin8 to ground on the Arduino as seen below. 
-
-![external led](https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing)
-
-<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_ext_led.jpg >
+The external LED was connected in series with a 1 kΩ resistor from pin 8 to ground on the Arduino. We modified the internal blink code to flash the LED from pin 8 rather than the built in LED. 
 
 ~~~
 void setup() {
@@ -66,18 +61,15 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ~~~
-The vidoe of the external LED blinking is shown the video below:
+The video of the external LED blinking is shown the video below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UREEzOB6Taw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-An image of the external LED blinking is shown in the image below:
-
-![external LED](/images/lab1/compressed_ext_led.jpg)
-
+This example helped us gain understanding of the I/O pins and how to use them.
 
 ## Potentiometer Serial Read
 
-The potentiometer was used to divide voltage, and therefore control the associated electronics in the circuit. The potentiometer works as the following:
+The potentiometer was used to divide voltage, and therefore control the associated electronics in the circuit. The potentiometer works by toggling the resistance as the knob is twisted.  This is shown in the following schematic:
 
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
@@ -90,7 +82,8 @@ The circuit setup is like the following:
 
 ![potentiometer](/images/lab1/compressed_pot_print.jpg)
 
-We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
+We then moditied the 'sensorPin' to be the zeroth pin of the analog pins (AO), and set the sensor value to be 0. 
+We also had to initialize the serial port with a Serial.begin() call.
 
 ~~~
 int sensorPin = A0;
@@ -101,28 +94,22 @@ void setup() {
   Serial.begin(9600);
 }
 ~~~
-We print the sensor value on the screen using a `Serial.print` call. We waited for half a second using `delay`:
+We print the sensor value on the screen using a `Serial.print` call to print the analogg capture on the sensor pin:
 ~~~
 // the loop function runs over and over again forever
 void loop() {
   sensorValue = analogRead(sensorPin);
   Serial.print(sensorValue);
   Serial.println(" ");
-  delay(1000);                       // wait for a second
+  delay(500);                     
 
 }
 ~~~
 Running the code printed out the analog value to the serial monitor. It worked as expected. Here is a video of the setup. 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-An image of screen printout and the circuit is the following:
-
-![pot_print](/images/lab1/Webp.net-resizeimage-8.jpg)
-
-
-
-
-
+There are 6 different analog input pins ranging from A0 to A5.  
 
 ## Potentiometer to LED
 
@@ -130,7 +117,10 @@ We then used the potentiometer to control the brightness the LED. As we rotated 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4isUPZo6t5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-![potentiometer to LED intensity](/images/lab1/compressed_pot_led.gif)
+This was done with a simulated analog output through the digital output pins enabled with pulse width modulation (PWM). 
+PWM is when the digital signal is toggled high and low at specific duty cycles.  This is shown below: 
+
+![PWM](https://upload.wikimedia.org/wikipedia/commons/4/49/Pwm_5steps.gif)
 
 The code for controlling LED intensity is the following:
 ~~~
@@ -156,13 +146,14 @@ An image of the circuit is the following:
 
 
 ## Potentiometer to Servo
-We then mapped the values from the potentiometer to control the servo. The Parallax continuous rotation servo takes in values from a PWM signal ranging from 0-180.  At a value of 90, the servo is not moving; increasing toward 180 the servo speeds up in one direction, and decreasing to 0 the servo speeds up in the other direction.
-
-![potentiometer to servo motor](/images/lab1/pot_motor.gif)
+We then mapped the values from the potentiometer to control the servo. The Parallax continuous rotation servo takes in values from a PWM signal ranging from 0-180.  At a value of 90, the servo is not moving; increasing toward 180 the servo speeds up in one direction, and decreasing to 0 the servo speeds up in the other direction.  To use the servos, we included the Servo.h library and assigned pin 9, a PWM pin, to the motor.
 
 The circuit setup is shown in the following image:
 
 ![pot_servo](/images/lab1/compressed_pot_servo.jpg)
+
+One thing to note is our use of the map() function, mapping the analog input from 0 to 1023 to a more useful range between 0 to 180 such that the motors could function properly. 
+
 ~~~
 #include <Servo.h> //include the servo library
 Servo myservo; 
@@ -170,14 +161,11 @@ Servo myservo;
 int sensorPin = A0;
 int sensorValue=0;
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  //pinMode(9, OUTPUT);
   myservo.attach(9);
   Serial.begin(9600);
   
 }
 
-// the loop function runs over and over again forever
 void loop() {
   sensorValue = analogRead(sensorPin);   //read the value of the potentiometer
   sensorValue = map(sensorValue, 0, 1023, 0, 180);  //map the reading between 0 and 180
@@ -190,18 +178,19 @@ The video is a demonostration of using the rotation of potentiometer to control 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AC5Cre2YxCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
-
+We had to troubleshoot our motors by using a screwdriver to calibrate them.  We did this by setting the motor to an output of 90 and adjusted the screw in the back such that the motor was not moving.  This exercise taught us how the Parallax servo motors worked, which was useful knowledge moving forward.
 
 ## Robot Assembly and Driving in a Square
 
-We took cues from the lab instruction and past team websites, and we assembled our own website. The final robot is shown below. 
+We took cues from the lab instruction and past team websites, and we assembled our robot.  We used a base plate and attached two servo motors to power the main wheels.  We attached a ball bearing third point of contact to the ground.  We then attached the breadboard and Arduino to the top of the plate and wired the motors to the arduino.  The final robot is shown below. 
 
 ![assembled robot](/images/lab1/compressed_robot.jpg)
 
 
-The next thing we had to think about was how we would power the necessary peripherals. To power two servos from our 5V battery pack, we spliced a USB cable such that we were able to get the individual power and ground wires. Since there is only a single 5V port on the Arduino, this served us well as a temporary hack so both servos could access 5V through connection on a breadboard. The Arduino was powered through a 9V battery, that we placed beneath the Arduino mount on the robot. With everything assembled, our robot was ready to be programmed.
+The next thing we had to think about was how we would power the necessary peripherals. To power two servos from our 5V battery pack, we spliced a USB cable such that we were able to get the individual power and ground wires. We hooked up the wires to a arduino-compatible power jack and mounted the battery pack on the bottom of the base plate.  With everything assembled, our robot was ready to be programmed.
 
-To drive out robot, we wrote the code for our robot to move forward and turn right. We recorded the robot moving in a square. 
+To drive out robot, we wrote the code for our robot to move forward, move backward, and turn right.  To move in a square, we programmed the robot to drive forward to 2 seconds, turn for 1.35 seconds (to turn 90 degrees), and then repeat. 
+
 ~~~
 #include <Servo.h>
 Servo left;
@@ -239,8 +228,8 @@ void back() {
 }
 
 void turn() {
-  right.write(95); //right servo turns faster than left, enabling the robot to turn
-  left.write(95);
+  right.write(95); 
+  left.write(90);
 }
 ~~~
 The final robot functioned as we expected, and was able to run in a square. A video of our robot working autonomously is shown below:
