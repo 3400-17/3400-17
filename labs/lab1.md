@@ -75,7 +75,7 @@ We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
 
 The circuit setup is like the following:
-![potentiometer](/pot_print)
+![potentiometer](/images/lab1/pot_print.jpg)
 
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
@@ -118,8 +118,8 @@ We then used the potentiometer to control the brightness the LED. As we rotated 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4isUPZo6t5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ![potentiometer to LED intensity](/images/lab1/pot_led.gif)
-The code for controlling LED intensity is the following:
 
+The code for controlling LED intensity is the following:
 ~~~
 int sensorPin = A0;
 int sensorValue=0;
@@ -147,7 +147,6 @@ We then mapped the values from the potentiometer to control the servo. The Paral
 ![potentiometer to servo motor](/images/lab1/pot_motor.gif)
 
 The circuit setup is shown in the following image:
-
 [pot_servo](/images/lab1/pot_servo.jpg)
 ~~~
 #include <Servo.h> //include the servo library
