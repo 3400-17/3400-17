@@ -135,7 +135,7 @@ void loop() {
 ~~~
 An image of the circuit is the following:
 
-![pot_LED](/images/lab1/Webp.net-resizeimage-10.jpg)
+![pot_LED](https://snag.gy/vRAMbm.jpg)
 
 
 ## Potentiometer to Servo
@@ -143,7 +143,7 @@ We then mapped the values from the potentiometer to control the servo. The Paral
 
 The circuit setup is shown in the following image:
 
-![pot_servo](/images/lab1/compressed_pot_servo.jpg)
+![pot_servo](https://snag.gy/eOuvxS.jpg)
 
 One thing to note is our use of the map() function, mapping the analog input from 0 to 1023 to a more useful range between 0 to 180 such that the motors could function properly. 
 
@@ -177,7 +177,7 @@ We had to troubleshoot our motors by using a screwdriver to calibrate them.  We 
 
 We took cues from the lab instruction and past team websites, and we assembled our robot.  We used a base plate and attached two servo motors to power the main wheels.  We attached a ball bearing third point of contact to the ground.  We then attached the breadboard and Arduino to the top of the plate and wired the motors to the arduino.  The final robot is shown below. 
 
-![assembled robot](/images/lab1/compressed_robot.jpg)
+![assembled robot](https://snag.gy/3An1TO.jpg)
 
 
 The next thing we had to think about was how we would power the necessary peripherals. To power two servos from our 5V battery pack, we spliced a USB cable such that we were able to get the individual power and ground wires. We hooked up the wires to a arduino-compatible power jack and mounted the battery pack on the bottom of the base plate.  With everything assembled, our robot was ready to be programmed.
