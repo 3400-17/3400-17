@@ -50,7 +50,7 @@ The external LED was connected in series with a 1k ohm resistor from pin8 to gro
 
 ![external led](https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing)
 
-<img src=https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing height="400">
+<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_ext_led.jpg height="400">
 ~~~
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
