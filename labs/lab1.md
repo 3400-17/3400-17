@@ -147,7 +147,8 @@ We then mapped the values from the potentiometer to control the servo. The Paral
 ![potentiometer to servo motor](/images/lab1/pot_motor.gif)
 
 The circuit setup is shown in the following image:
-[pot_servo](/images/lab1/pot_servo.jpg)
+
+![pot_servo](/images/lab1/pot_servo.jpg)
 ~~~
 #include <Servo.h> //include the servo library
 Servo myservo; 
