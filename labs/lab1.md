@@ -46,7 +46,7 @@ An image of the internal LED setup is the following:
 
 The external LED was connected in series with a 1k ohm resistor from pin8 to ground on the Arduino as seen below. 
 
-![external led](/images/lab1/external_led_blink.gif)
+![external led](https://drive.google.com/file/d/1R3-DfPPGGs5WDM5uDWtSZj8tuaqQfaEo/view?usp=sharing)
 
 ~~~
 void setup() {
