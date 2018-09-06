@@ -40,7 +40,7 @@ void loop() {
 ~~~
 An image of the internal LED setup is the following: 
 
-![internal LED](../images/lab1/compressed_int_led.jpg)
+![internal LED](/images/lab1/compressed_int_led.jpg)
 
 ## External Blink
 
