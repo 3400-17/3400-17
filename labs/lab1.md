@@ -44,7 +44,7 @@ An image of the internal LED setup is the following:
 
 <img src="https://raw.githubusercontent.com/3400-17/Team-17-Prime/master/images/lab1/compressed_ext_led.jpg" height=100>
 
-<img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
+<img src="https://raw.githubusercontent.com/3400-17/Team-17-Prime/master/images/lab1/compressed_ext_led.jpg">
 
 ## External Blink
 
