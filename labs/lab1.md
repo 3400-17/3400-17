@@ -19,8 +19,7 @@ We downloaded Arduino IDE from [this link.](https://www.arduino.cc/en/Main/Softw
 
 Using the "Blink" code in File>Examples>1.Basics> Blink of Arduino IDE, we could make the internal LED blink. 
 
-<iframe src="https://drive.google.com/file/d/1AitKiP5LDuS085Qc87MSYno-bPexnUOw/preview" width="640" height="480"></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n9FKL0pYl8Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ~~~
 void setup() {
@@ -56,6 +55,9 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ~~~
+The vidoe of the external LED blinking is shown the video below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UREEzOB6Taw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 ## Potentiometer Serial Read
 We connected the potentiometer to the Arduino like so:
@@ -83,12 +85,10 @@ void loop() {
 }
 ```
 Running the code printed out the analog value to the serial monitor. It worked as expected. Here is a video of the setup. 
-
-<iframe src="https://drive.google.com/file/d/11GYL5x2VYswiES6nj-QQmAoJPfs0C5V3/view?usp=sharing" width="640" height="480"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 The next phase was controlling an LED with the potentiometer reading. We built the following circuit:
 
-<iframe src="https://drive.google.com/file/d/1d4nVslLqheUzZnBYHYApJmcubzB5EG9Y/view?usp=sharing" width="640" height="480"></iframe>
 
 
 
@@ -96,7 +96,9 @@ The next phase was controlling an LED with the potentiometer reading. We built t
 
 We then used the potentiometer to control the brightness the LED. As we rotated the potentiometer, the LED changed brightness:
 
-<iframe src="" width="640" height="480"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4isUPZo6t5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The code for controlling LED intensity is the following:
 
 ![potentiometer to LED intensity](/images/lab1/pot_led.gif)
 
@@ -146,6 +148,9 @@ void loop() {
   delay(15);                       // wait 
 }
 ~~~
+The video is a demonostration of using the rotation of potentiometer to control the servo:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AC5Cre2YxCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 
 
 ## Robot Assembly and Driving in a Square
 
@@ -163,19 +168,19 @@ To drive out robot, we wrote the code for our robot to move forward and turn rig
 Servo left;
 Servo right; 
 
-int sensorPin = A0;
-int sensorValue=0;
+int sensorPin = A0; //assign sensor to pin A0
+int sensorValue=0; //set sensorvalue to 0 to initialize it
 
 void setup() {
-  left.attach(10);
-  right.attach(9);  
-  Serial.begin(9600);
+  left.attach(10); //attach the left servo variable to pin10
+  right.attach(9);  //attach the right servo variable to pin9
+  Serial.begin(9600); 
   
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  forward();
+  forward(); 
   delay(2000);
   turn();
   delay(1350);
@@ -183,8 +188,8 @@ void loop() {
 }
 
 void forward() {
-  left.write(95);
-  right.write(85);
+  left.write(95); //write a value to the servo, 90 being no movement
+  right.write(85); 
   
 }
 
@@ -195,9 +200,10 @@ void back() {
 }
 
 void turn() {
-  right.write(95);
+  right.write(95); //right servo turns faster than left, enabling the robot to turn
   left.write(95);
 }
 ~~~
-<iframe src="" width="640" height="480"></iframe>
+The final robot functioned as we expected, and was able to run in a square. A video of our robot working autonomously is shown below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wx0h-h_tRTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
