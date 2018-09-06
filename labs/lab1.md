@@ -246,10 +246,8 @@ The final robot functioned as we expected, and was able to run in a square. A vi
 
 ## Work Distribution
 
-*   Michael: Internal LED blink
-*   Marcela: External LED
-*   Natan: Reading the potentiometer
-*   Siming: Mapping the potentiometer to the servo
-*   Zoe: Assembling the robot
+We worked in our teams together through each of the basic arduino assignments (blinking LED, potentiometer, motor).
+
+As we got to building the robot, team 1 focused more on the code for the robot and team 2 focused on the construction of the robot.  
 
 
