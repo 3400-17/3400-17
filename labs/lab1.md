@@ -22,6 +22,7 @@ Using the "Blink" code in File>Examples>1.Basics> Blink of Arduino IDE, we could
 <iframe width="560" height="315" src="https://www.youtube.com/embed/n9FKL0pYl8Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
 
+The code to making the internal LED blink is the following:
 
 ~~~
 void setup() {
