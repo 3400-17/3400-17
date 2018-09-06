@@ -40,9 +40,9 @@ void loop() {
 ~~~
 An image of the internal LED setup is the following: 
 
-![internal LED](https://docs.google.com/document/d/12XCQVoJX36GbYEaDqwslyNog7n55_ibt8oly0aadaC4/edit)
+![internal LED](https://drive.google.com/file/d/18AL-JPXZcwoq-ZhWS-gMLJUDr7UwhRXo/view?usp=sharing)
 
-<img src=https://raw.githubusercontent.com/3400-17/Team-17-Prime/master/images/lab1/compressed_int_led.jpg height=400>
+<img src=https://drive.google.com/file/d/18AL-JPXZcwoq-ZhWS-gMLJUDr7UwhRXo/view?usp=sharing height=400>
 
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
