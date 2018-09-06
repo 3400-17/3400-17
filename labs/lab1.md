@@ -42,7 +42,7 @@ An image of the internal LED setup is the following:
 
 ![internal LED](https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg)
 
-<img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg height=100>
+<img src=https://raw.githubusercontent.com/3400-17/Team-17-Prime/master/images/lab1/compressed_int_led.jpg height=400>
 
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
