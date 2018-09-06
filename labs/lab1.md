@@ -63,6 +63,8 @@ The vidoe of the external LED blinking is shown the video below:
 ## Potentiometer Serial Read
 We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
+
+
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
 ~~~
