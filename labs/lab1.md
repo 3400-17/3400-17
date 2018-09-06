@@ -36,6 +36,8 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ~~~
+An image of the internal LED setup is the following: 
+![internal LED](/images/lab1/int_LED.jpg)
 
 ## External Blink
 
@@ -59,6 +61,9 @@ void loop() {
 The vidoe of the external LED blinking is shown the video below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UREEzOB6Taw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+An image of the external LED blinking is shown in the image below:
+![external LED](/images/lab1/ext_LED.jpg)
+
 
 ## Potentiometer Serial Read
 
@@ -69,6 +74,8 @@ The potentiometer was used to divide voltage, and therefore control the associat
 We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
 
+The circuit setup is like the following:
+![potentiometer](/pot_print)
 
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
@@ -94,6 +101,9 @@ void loop() {
 ~~~
 Running the code printed out the analog value to the serial monitor. It worked as expected. Here is a video of the setup. 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+An image of screen printout and the circuit is the following:
+![pot_print](/images/lab1/pot_print_screen.jpg)
 
 The next phase was controlling an LED with the potentiometer reading. We built the following circuit:
 ![potentiometer to LED port](/images/lab1/pot_LED.jpg)
@@ -128,13 +138,16 @@ void loop() {
   delay(5);                       // wait for a second
 }
 ~~~
+An image of the circuit is the following:
+![pot_LED](/images/lab1/port_led.jpg)
+
 
 ## Potentiometer to Servo
 We then mapped the values from the potentiometer to control the servo. The Parallax continuous rotation servo takes in values from a PWM signal ranging from 0-180.  At a value of 90, the servo is not moving; increasing toward 180 the servo speeds up in one direction, and decreasing to 0 the servo speeds up in the other direction.
 
-
 ![potentiometer to servo motor](/images/lab1/pot_motor.gif)
-
+The circuit setup is shown in the following image:
+[pot_servo](/images/lab1/pot_servo.jpg)
 ~~~
 #include <Servo.h> //include the servo library
 Servo myservo; 
@@ -160,6 +173,7 @@ void loop() {
 The video is a demonostration of using the rotation of potentiometer to control the servo:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AC5Cre2YxCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
+
 
 ## Robot Assembly and Driving in a Square
 
@@ -214,7 +228,8 @@ void turn() {
 ~~~
 The final robot functioned as we expected, and was able to run in a square. A video of our robot working autonomously is shown below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx0h-h_tRTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+The final robot image is the following:
+![final](/images/lab1/robot.jpg)
 
 ## Work Distribution
 
