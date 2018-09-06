@@ -139,7 +139,7 @@ void loop() {
 }
 ~~~
 An image of the circuit is the following:
-![pot_LED](/images/lab1/port_led.jpg)
+![pot_LED](/images/lab1/pot_led.jpg)
 
 
 ## Potentiometer to Servo
