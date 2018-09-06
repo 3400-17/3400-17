@@ -19,7 +19,8 @@ We downloaded Arduino IDE from [this link.](https://www.arduino.cc/en/Main/Softw
 
 Using the "Blink" code in File>Examples>1.Basics> Blink of Arduino IDE, we could make the internal LED blink. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n9FKL0pYl8Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+https://www.youtube.com/embed/n9FKL0pYl8Y
+
 
 ~~~
 void setup() {
@@ -60,8 +61,15 @@ The vidoe of the external LED blinking is shown the video below:
 
 
 ## Potentiometer Serial Read
+
+The potentiometer was used to divide voltage, and therefore control the associated electronics in the circuit. The potentiometer works as the following:
+<img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
+
+
 We connected the potentiometer to the Arduino like so:
 ![potentiometer to serial port](/images/lab1/pot_serial.gif)
+
+
 We then moditied the 'sensorPin' to be the zeroth pin of the analog pins, and set the sensor value to be 0. 
 
 ~~~
@@ -88,6 +96,7 @@ Running the code printed out the analog value to the serial monitor. It worked a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hpu6lJtAxwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 The next phase was controlling an LED with the potentiometer reading. We built the following circuit:
+![potentiometer to LED port](/images/lab1/pot_LED.jpg)
 
 
 
@@ -205,3 +214,14 @@ void turn() {
 ~~~
 The final robot functioned as we expected, and was able to run in a square. A video of our robot working autonomously is shown below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx0h-h_tRTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+## Work Distribution
+
+*   Michael: Internal LED blink
+*   Marcela: External LED
+*   Natan: Reading the potentiometer
+*   Siming: Mapping the potentiometer to the servo
+*   Zoe: Assembling the robot
+
+
