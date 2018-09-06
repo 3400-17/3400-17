@@ -1,5 +1,7 @@
 # Lab 1: Introduction to Arduino and Robot Assembly
 
+testing
+
 ### Objectives
 
 * Learn how to use the Arduino Uno and the Arduino IDE.
