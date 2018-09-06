@@ -71,7 +71,7 @@ void setup() {
   Serial.begin(9600);
 }
 ```
-We print the sensor value on the screen using a 'Serial.print' call. We waited for half a second using 'delay':
+We print the sensor value on the screen using a `Serial.print` call. We waited for half a second using `delay`:
 ```cpp
 // the loop function runs over and over again forever
 void loop() {
@@ -91,7 +91,12 @@ The next phase was controlling an LED with the potentiometer reading. We built t
 <iframe src="https://drive.google.com/file/d/1d4nVslLqheUzZnBYHYApJmcubzB5EG9Y/view?usp=sharing" width="640" height="480"></iframe>
 
 
+
 ## Potentiometer to LED
+
+We then used the potentiometer to control the brightness the LED. As we rotated the potentiometer, the LED changed brightness:
+
+<iframe src="" width="640" height="480"></iframe>
 
 ![potentiometer to LED intensity](/images/lab1/pot_led.gif)
 
@@ -114,11 +119,13 @@ void loop() {
 ~~~
 
 ## Potentiometer to Servo
+We then mapped the values from the potentiometer to control the servo. The Parallax continuous rotation servo takes in values from a PWM signal ranging from 0-180.  At a value of 90, the servo is not moving; increasing toward 180 the servo speeds up in one direction, and decreasing to 0 the servo speeds up in the other direction.
+
 
 ![potentiometer to servo motor](/images/lab1/pot_motor.gif)
 
 ~~~
-#include <Servo.h>
+#include <Servo.h> //include the servo library
 Servo myservo; 
 
 int sensorPin = A0;
@@ -133,19 +140,24 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  sensorValue = analogRead(sensorPin);
-  sensorValue = map(sensorValue, 0, 1023, 0, 180); 
-  myservo.write(sensorValue); 
+  sensorValue = analogRead(sensorPin);   //read the value of the potentiometer
+  sensorValue = map(sensorValue, 0, 1023, 0, 180);  //map the reading between 0 and 180
+  myservo.write(sensorValue);   //sets the servo position according to the scaled value 
   delay(15);                       // wait 
 }
 ~~~
 
 ## Robot Assembly and Driving in a Square
 
+We took cues from the lab instruction and past team websites, and we assembled our own website. The final robot is shown below. 
+
 ![assembled robot](/images/lab1/robot.jpg)
 
 https://drive.google.com/file/d/1TNmG1FMpcSOZAJzGpEx64XWEyMJwZd1h/view?usp=sharing
 
+The next thing we had to think about was how we would power the necessary peripherals. To power two servos from our 5V battery pack, we spliced a USB cable such that we were able to get the individual power and ground wires. Since there is only a single 5V port on the Arduino, this served us well as a temporary hack so both servos could access 5V through connection on a breadboard. The Arduino was powered through a 9V battery, that we placed beneath the Arduino mount on the robot. With everything assembled, our robot was ready to be programmed.
+
+To drive out robot, we wrote the code for our robot to move forward and turn right. We recorded the robot moving in a square. 
 ~~~
 #include <Servo.h>
 Servo left;
@@ -187,3 +199,5 @@ void turn() {
   left.write(95);
 }
 ~~~
+<iframe src="" width="640" height="480"></iframe>
+
