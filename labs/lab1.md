@@ -71,11 +71,6 @@ The potentiometer was used to divide voltage, and therefore control the associat
 
 <img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
-
-We connected the potentiometer to the Arduino like so:
-
-![potentiometer to serial port](/images/lab1/pot_serial.gif)
-
 The circuit setup is like the following:
 
 ![potentiometer](/images/lab1/compressed_pot_print.jpg)
