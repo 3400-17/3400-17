@@ -19,7 +19,8 @@ We downloaded Arduino IDE from [this link.](https://www.arduino.cc/en/Main/Softw
 
 Using the "Blink" code in File>Examples>1.Basics> Blink of Arduino IDE, we could make the internal LED blink. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n9FKL0pYl8Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+https://www.youtube.com/embed/n9FKL0pYl8Y
+
 
 ~~~
 void setup() {
