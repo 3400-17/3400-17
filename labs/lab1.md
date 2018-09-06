@@ -4,7 +4,7 @@
 
 * Learn how to use the Arduino Uno and the Arduino IDE.
 * Construct a simple Arduino program with multiple components and the Arduino Uno
-* Assemble robot and complete a simple, autonomous task. 345
+* Assemble robot and complete a simple, autonomous task. 456
 
 
 ### Teams
@@ -43,6 +43,8 @@ An image of the internal LED setup is the following:
 ![internal LED](https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg)
 
 <img src=https://github.com/3400-17/Team-17-Prime/blob/master/images/lab1/compressed_int_led.jpg height=100>
+
+<img src="https://docs.google.com/uc?id=0B1r9QYTd8YNrTmRwODRBZjV1OGs">
 
 ## External Blink
 
