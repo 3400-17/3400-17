@@ -8,6 +8,7 @@ https://3400-17.github.io/3400-17/
 * Zoe Du (jd963)
 * Natan Vidra (nv78)
 * Marcela Rey (mmr244)
+* Siming Zou (sz95)
 
 ### Team Procedures
 
@@ -133,3 +134,4 @@ Name | date
 2) Natan Vidra | date 8/29/18
 3) Marcela Rey | date  8/31/18
 4) Zoe Du | date 8/31/18
+5) Siming Zou | date 9/4/18
