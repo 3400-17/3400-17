@@ -1,7 +1,7 @@
 # Team Contract
 
 ### ECE 3400, Fall 2018, Team # 17
-https://3400-17.github.io/3400-17/
+https://3400-17.github.io/Team-17-Prime/
 
 ### Team Members:
 * Michael Xiao (mfx2)
