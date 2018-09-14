@@ -17,4 +17,4 @@ Everyone
 
 * go over lab2
 
-  *split teams 
+  * split teams 
